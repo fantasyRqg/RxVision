@@ -13,7 +13,7 @@ let package = Package(
             targets: ["RxVision"]),
     ],
     dependencies: [
-        .package(url: "./Local_Package", from: "5.0.0")
+        .package(url: "https://github.com/fantasyRqg/RxSwiftLocalPackage", from: "1.0.0")
     ],
     targets: [
         .target(
