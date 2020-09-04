@@ -11,20 +11,5 @@ let package = Package(
         .library(
             name: "RxVision",
             targets: ["RxVision"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/fantasyRqg/RxSwiftLocalPackage", from: "1.0.0")
-    ],
-    targets: [
-        .target(
-            name: "RxVision",
-            dependencies: ["Assembler"], // "RxRelay"],
-            path: "." // Sources
-        ),
-//        .testTarget(
-//            name: "RxVisionTests",
-//            dependencies: ["RxVision"],
-//            path: "Tests"
-//        )
     ]
 )
