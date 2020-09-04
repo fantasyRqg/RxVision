@@ -13,12 +13,12 @@ let package = Package(
             targets: ["RxVision"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0")
+        .package(url: "./Local_Package", from: "5.0.0")
     ],
     targets: [
         .target(
             name: "RxVision",
-            dependencies: ["RxSwift"], // "RxRelay"],
+            dependencies: ["Assembler"], // "RxRelay"],
             path: "." // Sources
         ),
 //        .testTarget(
